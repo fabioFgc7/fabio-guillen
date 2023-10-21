@@ -131,7 +131,7 @@ export const listaNav: Links[] = [
   description: "Mi Portafolio Web muestra mi experiencia como desarrollador web y diseñador de interfaces de usuario, destacando mi habilidad para crear sitios web atractivos y funcionales.",
   enlance: {
     linkPage: "https://fabiofgc7.github.io/fabio-website/",
-    linkGitHub: "https://github.com/fabioFgc7/fabio-website"
+    linkGitHub: "https://github.com/fabioFgc7/fabio-guillen/"
   },
   image: "./images/fabio-web-site.jpg",
   animatedAos: "zoom-in-left",
