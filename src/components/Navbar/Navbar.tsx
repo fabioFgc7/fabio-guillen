@@ -52,7 +52,7 @@ const Navbar = () => {
         }    `}>
         <a
           href='#home'
-          className={`w-auto h-auto text-xl md:hover:animate-fade font-extrabold  font-serif after:h-1 after:w-1 ${
+          className={`w-auto h-auto md:text-xl text-lg md:hover:animate-fade font-extrabold  font-serif after:h-1 after:w-1 ${
             mode ? "after:bg-[#00ADB5] " : "after:bg-[#71C9CE] "
           } after:absolute  after:z-10 after:transition-all after:duration-300 md:after:left-0 hover:after:w-full  after:bottom-0 after:right-full  hover:after:left-0 md:text-2xl  md:w-auto  md:h-auto    translate-x-0 md:mt-0 mt-10  `}>
           <span
@@ -66,7 +66,7 @@ const Navbar = () => {
         <ul className='flex md:flex-row flex-col md:items-center gap-4 list-none md:mr-10  '>
           {listaNav.map(({ id, link, title }) => (
             <li
-              className=' flex items-center'
+              className=' flex items-center md:text-base text-[14.5px]'
               key={id}>
               <a
                 className={` inline-block px-2 z-10  py-[3px] overflow-hidden  transition-all duration-300  relative after:absolute after:w-full after:h-[3.5px] after:transition-all after:duration-300 md:after:right-full after:right-full after:bottom-0 ${

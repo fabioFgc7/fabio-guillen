@@ -6,29 +6,24 @@ import { useState, useEffect } from "react";
 import { Project } from "../../types";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "../mi_icons/Icons";
+import { proyectos } from "../../data/data";
 export const DescriptionsProyects = () => {
   const [elementos, setElementos] = useState<Project[]>([]);
   const { id } = useParams();
   useEffect(() => {
-    async function fetchData() {
-      const res = await fetch("/src/data/project_data.json");
-      const data = await res.json();
-      const detalles = data.projects.find((item: Project) => item.id === id);
-      console.log(detalles);
-
+    const detalles = proyectos.find((el: Project) => el.id === id);
+    console.log(detalles);
+    if (detalles) {
       setElementos([detalles]);
     }
-    fetchData();
-  }, []);
-
-  console.log(id);
-
+  }, [id]);
   const { mode } = useTheme();
   return (
-    <section className={` w-full  md:p-5 p-2 h-full   `}>
+    <section className={` w-full   p-2 h-full   `}>
       <Link
         id='work'
-        to={`/`}>
+        to='/fabio-guillen/'
+        className='fixed'>
         <ArrowLeft />
       </Link>
       <section className='w-full flex justify-center  '>
@@ -46,9 +41,9 @@ export const DescriptionsProyects = () => {
             return (
               <div
                 key={id}
-                className={`max-w-5xl flex flex-col  gap-2  justify-center `}>
+                className={`max-w-5xl flex flex-col  gap-2  justify-center animate-flip-down animate-delay-500 transition-all duration-300 ease-in  `}>
                 <h2
-                  className={`w-full text-center text-2xl font-bold ${
+                  className={`w-full text-center md:text-2xl font-bold text-lg ${
                     mode ? "text-[#00ADB5]" : "text-[#222831] "
                   } `}>
                   {title}

@@ -38,3 +38,8 @@ body {
   background: #00adb5;
   opacity: 0.8;
 }
+@media (max-width: 640px) {
+  .control-arrow {
+    display: none; /* Oculta los botones */
+  }
+}

@@ -1,11 +1,12 @@
-import elementos from "../data/project_data.json";
 import { useTheme } from "../components/context/DarkContext";
 import { Project } from "../types";
 import { GitHubIcon, LinkIcon } from "../components/mi_icons/Icons";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-const items: Project[] = elementos.projects.map((item: Project) => item);
+import { proyectos } from "../data/data";
+const items: Project[] = proyectos.map((el) => el);
+console.log(items);
 const Project = () => {
   const { mode } = useTheme();
   return (
@@ -38,7 +39,7 @@ const Project = () => {
             key={item.id}
             data-aos={item.animatedAos}>
             <div
-              className={`md:w-1/2 w-auto relative  flex flex-col items-center justify-center duration-300 ease-out rounded-xl   overflow-hidden group: ${
+              className={`md:w-1/2 w-4/5 sm:w-4/6  relative  flex flex-col items-center justify-center duration-300 ease-out rounded-xl   overflow-hidden group: ${
                 mode
                   ? "bg-[#393E46] border-[#393E46] border-2 hover:text-[#EEEEEE]"
                   : "bg-[#CBF1F5] "
@@ -61,7 +62,7 @@ const Project = () => {
                   {item.description}
                 </p>
                 <Link
-                  to={`proyectos/${item.id}`}
+                  to={`/fabio-guillen/${item.id}`}
                   className={` rounded-md text-center  md:mt-4 mt-1 px-2 md:py-[3px] transition-all duration-500 ease-in font-semibold   ${
                     mode
                       ? "border-[#00ADB5] hover:bg-[#00ADB5] border-2 "

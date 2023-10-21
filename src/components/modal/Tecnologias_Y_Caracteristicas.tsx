@@ -13,7 +13,7 @@ export const Tecnologias_Y_Caracteristicas = ({
   return (
     <div className={`w-full flex gap-2 flex-wrap`}>
       <div
-        className={` border-[2px] p-2  md:w-auto max-w-5xl rounded-md  space-y-2 ${
+        className={` border-[2px] p-2  md:w-auto w-full rounded-md  space-y-2 ${
           mode ? "border-[#00ADB5]" : "border-[#71C9CE]"
         }`}>
         <p className='md:text-lg text-base'>Tecnologías Utilizadas:</p>
@@ -29,7 +29,7 @@ export const Tecnologias_Y_Caracteristicas = ({
         </div>
       </div>
       <div
-        className={` border-[2px] p-2 rounded-md md:w-auto max-w-5xl  ${
+        className={` border-[2px] p-2 rounded-md md:w-auto w-full  ${
           mode ? "border-[#00ADB5]" : "border-[#71C9CE]"
         }`}>
         <p className='md:text-lg text-base'>Herramientas y Bibliotecas:</p>
@@ -47,20 +47,24 @@ export const Tecnologias_Y_Caracteristicas = ({
       </div>
 
       <div
-        className={`  border-[2px] p-2 rounded-md md:w-auto max-w-5xl  ${
+        className={`  border-[2px] p-2 rounded-md md:w-auto w-full  ${
           mode ? "border-[#00ADB5]" : "border-[#71C9CE]"
         }`}>
         <p className='md:text-lg text-base'>Otras Tecnologías:</p>
         <ul className='flex gap-2'>
           {" "}
           {tecnologiasUtilizadas.otrasTecnologias.map((el) => (
-            <li className='text-sm list-inside list-disc '>{el}</li>
+            <li
+              className='text-sm list-inside list-disc '
+              key={el}>
+              {el}
+            </li>
           ))}
         </ul>
       </div>
 
       <div
-        className={` gap-2  border-[2px]  p-2 rounded-md md:w-auto max-w-5xl  ${
+        className={` gap-2  border-[2px]  p-2 rounded-md md:w-auto w-full  ${
           mode ? "border-[#00ADB5]" : "border-[#71C9CE]"
         }`}>
         <p className='md:text-lg text-base md:max-w-lg '>Caracteriticas:</p>
