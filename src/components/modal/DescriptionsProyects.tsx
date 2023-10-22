@@ -12,7 +12,6 @@ export const DescriptionsProyects = () => {
   const { id } = useParams();
   useEffect(() => {
     const detalles = proyectos.find((el: Project) => el.id === id);
-    console.log(detalles);
     if (detalles) {
       setElementos([detalles]);
     }
@@ -23,7 +22,7 @@ export const DescriptionsProyects = () => {
       <Link
         id='work'
         to='/fabio-guillen/'
-        className='fixed'>
+        className='fixed z-10'>
         <ArrowLeft />
       </Link>
       <section className='w-full flex justify-center  '>
