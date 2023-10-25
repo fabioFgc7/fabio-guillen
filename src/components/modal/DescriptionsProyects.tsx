@@ -21,7 +21,7 @@ export const DescriptionsProyects = () => {
     <section className={` w-full   p-2 h-full   `}>
       <Link
         id='work'
-        to='/fabio-guillen/'
+        to='/'
         className='fixed z-10'>
         <ArrowLeft />
       </Link>

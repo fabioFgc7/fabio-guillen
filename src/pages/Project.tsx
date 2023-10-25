@@ -62,7 +62,7 @@ const Project = () => {
                   {item.description}
                 </p>
                 <Link
-                  to={`/fabio-guillen/${item.id}`}
+                  to={`/${item.id}`}
                   className={` rounded-md text-center  md:mt-4 mt-1 px-2 md:py-[3px] transition-all duration-500 ease-in font-semibold   ${
                     mode
                       ? "border-[#00ADB5] hover:bg-[#00ADB5] border-2 "
