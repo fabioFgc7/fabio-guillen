@@ -24,7 +24,7 @@ function App() {
               element={<PaginasPrincipal />}
             />
             <Route
-              path='/:id'
+              path=':id'
               element={<DescriptionsProyects />}
             />
           </Routes>
