@@ -43,7 +43,7 @@ const Project = () => {
                 mode
                   ? "bg-[#393E46] border-[#393E46] border-2 hover:text-[#EEEEEE]"
                   : "bg-[#CBF1F5] "
-              }     hover:border-[#00ADB5]  p-2 group  `}>
+              }     hover:border-[#00ADB5]  p-[8px] group  `}>
               <img
                 className='w-60 lg:h-72  md:h-60 h-52 group-hover:scale-110 transition-all duration-300 ease-in rounded-md'
                 src={item.image}
