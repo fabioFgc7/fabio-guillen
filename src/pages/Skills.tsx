@@ -13,7 +13,7 @@ const Skills = () => {
           mode ? "text-[#00ADB5]" : "text-[#222831] "
         } `}
         data-aos='title-animation'>
-        Mi Habilidades
+        Mis Habilidades
       </h2>
       <article className=' flex justify-center md:flex-row flex-col items-center gap-2'>
         <div className='md:max-w-md   p-3 '>

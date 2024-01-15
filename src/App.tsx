@@ -20,11 +20,11 @@ function App() {
         <ModalContext>
           <Routes>
             <Route
-              path='/'
+              path='/*'
               element={<PaginasPrincipal />}
             />
             <Route
-              path=':id'
+              path='/fabio-guillen/:id'
               element={<DescriptionsProyects />}
             />
           </Routes>
